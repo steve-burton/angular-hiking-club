@@ -13,6 +13,7 @@ import { AngularFire, FirebaseListObservable } from 'angularfire2';
 export class MemberListComponent implements OnInit {
   members: FirebaseListObservable<any[]>;
   currentRoute: string = this.router.url;
+  filterByMiles: number = 0;
 
   constructor(private router: Router, private memberService: MemberService) { }
 
@@ -22,6 +23,9 @@ export class MemberListComponent implements OnInit {
 
   goToDetailPage(clickedMember) {
     this.router.navigate(['members', clickedMember.$key]);
-  };
+  }
 
+  onMilesChange(optionFromMenu: number) {
+    this.filterByMiles = optionFromMenu;
+  }
 }

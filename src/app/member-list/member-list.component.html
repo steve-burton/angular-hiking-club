@@ -1,5 +1,11 @@
+<div class="miles-filter">
+  <label for="milesHiked">Miles hiked:</label>
+  <input type="number" #milesSelection>
+  <button class="btn btn-default" (click)="onMilesChange(milesSelection.value)">Update search</button>
+</div>
+
 <h2>Members</h2>
-<div *ngFor="let member of members | async" class="panel panel-default">
+<div *ngFor="let member of members | async | milesHiked:filterByMiles" class="panel panel-default">
   <div class="panel-body">
     <h3 (click)="goToDetailPage(member)">{{member.name}}</h3>
     <p>{{member.about}}</p>

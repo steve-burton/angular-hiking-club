@@ -20,16 +20,16 @@
       </div>
 
       <div class="form-group">
-        <label type="number" for="miles">Miles hiked:</label><br>
-        <input #newMiles class="form-control" id="miles">
-      </div>
-
-      <div class="form-group">
         <label type="text" for="image">Photo URL:</label><br>
         <input #newImage class="form-control" id="image">
       </div>
 
-      <button class="btn btn-default" (click)="submitForm(newName.value, newAddress.value, newAbout.value, newMiles.value, newImage.value); newName.value=''; newAddress.value=''; newAbout.value=''; newMiles.value=''; newImage.value=''">Add member</button>
+      <div class="form-group">
+        <label type="number" for="miles">Miles hiked:</label><br>
+        <input type="number" #newMiles class="form-control" id="miles">
+      </div>
+
+      <button class="btn btn-default" (click)="submitForm(newName.value, newAddress.value, newAbout.value, newImage.value, newMiles.value); newName.value=''; newAddress.value=''; newAbout.value=''; newImage.value=''; newMiles.value=''">Add member</button>
     </div>
   </div>
 </div>
