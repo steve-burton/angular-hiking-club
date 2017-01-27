@@ -1,17 +1,18 @@
 <div class="miles-filter">
-  <label for="milesHiked">Miles hiked:</label>
+  <label for="milesHiked">Search members who have hiked at least this many miles:</label>
   <input type="number" #milesSelection>
-  <button class="btn btn-default" (click)="onMilesChange(milesSelection.value)">Update search</button>
+  <button class="btn btn-default" (click)="onMilesChange(milesSelection.value); milesSelection.value=''">Update search</button>
 </div>
 
 <h2>Members</h2>
 <div *ngFor="let member of members | async | milesHiked:filterByMiles" class="panel panel-default">
   <div class="panel-body">
+    <img src="{{member.image}}" alt="Picture of Portland Hiking Club member">
     <h3 (click)="goToDetailPage(member)">{{member.name}}</h3>
     <p>{{member.about}}</p>
-    <div *ngIf="currentRoute === '/admin'">
-      {{member.address}}
-      {{member.miles}}
+    <div *ngIf="currentRoute === '/admin'" class="admin-panel">
+      Address: {{member.address}}<br>
+      Miles hiked:{{member.miles}}
       <hr>
       <app-edit-member [selectedMember]="member"></app-edit-member>
     </div>

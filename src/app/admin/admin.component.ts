@@ -17,6 +17,15 @@ export class AdminComponent implements OnInit {
   }
 
   submitForm(name: string, address: string, about: string, image: string, miles) {
+    if(name === "") {
+      return alert("Please enter a name.");
+    }
+    if(address === "") {
+      return alert("Please enter an address.");
+    }
+    if(miles === NaN || miles === "") {
+      return alert("Please enter miles hiked.");
+    }
     var newMember: Member = new Member(name, address, about, image, parseInt(miles));
     this.memberService.addMember(newMember);
   }
