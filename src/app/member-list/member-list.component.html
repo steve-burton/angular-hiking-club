@@ -3,11 +3,11 @@
   <div class="panel-body">
     <h3 (click)="goToDetailPage(member)">{{member.name}}</h3>
     <p>{{member.about}}</p>
-    <!-- <div *ngIf="currentRoute === '/admin'">
+    <div *ngIf="currentRoute === '/admin'">
       {{member.address}}
       {{member.miles}}
       <hr>
-      <app-edit-member [selectedMember]="member"></app-edit-member>
-    </div> -->
+      <!-- <app-edit-member [selectedMember]="member"></app-edit-member> -->
+    </div>
   </div>
 </div>
