@@ -21,4 +21,13 @@ export class MemberService {
   addMember(newMember: Member) {
     this.members.push(newMember);
   }
+
+  updateMember(updatedMember) {
+    var memberEntryInFirebase = this.getMemberById(updatedMember.$key);
+    memberEntryInFirebase.update({name: updatedMember.name,
+                                  address: updatedMember.address,
+                                  about: updatedMember.about,
+                                  image: updatedMember.image,
+                                  miles: updatedMember.miles});
+  }
 }
