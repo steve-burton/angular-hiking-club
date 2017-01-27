@@ -1,0 +1,31 @@
+{ "members": [{
+    "name": "Bob Frapples",
+    "address": "Oregon City",
+    "about": "I always bring an apple on my hikes.",
+    "miles": 5500,
+    "image": "http://cdn.blessthisstuff.com/imagens/stuff/ultimate-hikers-gear-guide-3.jpg",
+    "id": "1"
+    }, {
+    "name": "Jane Doe",
+    "address": "SW Portland",
+    "about": "I hike in style.",
+    "miles": 4000,
+    "image": "https://thespiritoftherose.files.wordpress.com/2014/06/img_9993.jpg",
+    "id": "2"
+    }, {
+    "name": "John Q. Public",
+    "address": "North Portland",
+    "about": "It's cold out here.",
+    "miles": 400,
+    "image": "http://travelswithknife.com/wp-content/uploads/2016/07/IMG_4611.jpg",
+    "id": "3"
+    }, {
+    "name": "Mary Sample",
+    "address": "SE Portland",
+    "about": "Multi-day trips are my thing.",
+    "miles": 3000,
+    "image": "https://blog.hyperlitemountaingear.com/wp-content/uploads/2015/08/Ashley-Hil-on-the-Pacific-Northwest-Trail-1024x686.jpg",
+    "id": "4"
+    }, {
+  }]
+}
