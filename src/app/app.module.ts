@@ -11,6 +11,7 @@ import { MemberListComponent } from './member-list/member-list.component';
 import { MemberDetailComponent } from './member-detail/member-detail.component';
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
+import { AdminComponent } from './admin/admin.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -25,7 +26,8 @@ export const firebaseConfig = {
     HomeComponent,
     AboutComponent,
     MemberListComponent,
-    MemberDetailComponent
+    MemberDetailComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
