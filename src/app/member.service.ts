@@ -30,4 +30,9 @@ export class MemberService {
                                   image: updatedMember.image,
                                   miles: updatedMember.miles});
   }
+
+  deleteMember(memberToDelete) {
+    var memberEntryInFirebase = this.getMemberById(memberToDelete.$key);
+    memberEntryInFirebase.remove();
+  }
 }
