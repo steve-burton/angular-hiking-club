@@ -46,12 +46,12 @@ nav.navbar {
   padding-top: 70px;
 }
 div.about-page {
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.7);
   padding: 20px;
   border-radius: 10px;
 }
 div.home-page {
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.7);
   padding: 20px;
   border-radius: 10px;
   width: 85%;
