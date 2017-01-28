@@ -34,6 +34,7 @@
     "@types/node": "^6.0.42",
     "angular-cli": "1.0.0-beta.26",
     "codelyzer": "~2.0.0-beta.1",
+    "extract-text-webpack-plugin": "^2.0.0-rc.0",
     "jasmine-core": "2.5.2",
     "jasmine-spec-reporter": "2.5.0",
     "karma": "1.2.0",
@@ -45,5 +46,16 @@
     "ts-node": "1.2.1",
     "tslint": "^4.3.0",
     "typescript": "~2.0.3"
-  }
+  },
+  "description": "#### January 27, 2017",
+  "main": "karma.conf.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/steve-burton/angular-hiking-club.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/steve-burton/angular-hiking-club/issues"
+  },
+  "homepage": "https://github.com/steve-burton/angular-hiking-club#readme"
 }
