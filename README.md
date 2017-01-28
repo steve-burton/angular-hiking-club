@@ -14,16 +14,16 @@ To run the application:
 * Clone this repository to your computer.
 * Navigate to the project directory in the terminal.
 * Use the commands $ npm install and $ bower init to download the packages necessary to run the application.
-* Create a file to store an API key:
-##### src/app/api-keys.ts
-##### The file should look like this, with your own Firebase credentials:  
-##### export var masterFirebaseConfig = {
-#####  apiKey: "xxxx",
-#####  authDomain: "xxxx.firebaseapp.com",
-#####  databaseURL: "https://xxxx.firebaseio.com",
-#####  storageBucket: "xxxx.appspot.com",
-#####  messagingSenderId: "xxxx"
-##### };
+* Create a file to store an API key: <br>
+src/app/api-keys.ts <br>
+The file should look like this, with your own Firebase credentials:  <br>
+export var masterFirebaseConfig = { <br>
+apiKey: "xxxx", <br>
+authDomain: "xxxx.firebaseapp.com", <br>
+databaseURL: "https://xxxx.firebaseio.com", <br>
+storageBucket: "xxxx.appspot.com", <br>
+messagingSenderId: "xxxx" <br>
+};
 
 * Now run the commands $ ng build then $ ng serve and navigate to http://localhost:4200 in your web browser to run the project on the local server.
 
