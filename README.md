@@ -14,7 +14,8 @@ To run the application:
 * Clone this repository to your computer.
 * Navigate to the project directory in the terminal.
 * Use the commands $ npm install and $ bower init to download the packages necessary to run the application.
-* Create a file to store an API key: <br>
+* Create a file to store an API key:
+
 src/app/api-keys.ts <br>
 The file should look like this, with your own Firebase credentials:  <br>
 export var masterFirebaseConfig = { <br>
