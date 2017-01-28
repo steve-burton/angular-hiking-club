@@ -1,5 +1,5 @@
 img#welcome-photo {
-  width: 1000px;
+  width: 85%;
   border-color: white;
   border-style: solid;
   border-width: 2px;
@@ -21,11 +21,15 @@ div.miles-filter {
 div.member-detail img {
   width: 400px;
 }
-
 div.panel-body img {
   width: 200px;
   float: left;
   margin-right: 20px;
+}
+div.panel-body span:hover {
+  background-color: rgb(209, 226, 255);
+  padding: 3px 10px 3px 5px;
+  cursor: pointer;
 }
 body {
   background-image: url("./assets/images/mountains.jpg");
@@ -41,8 +45,15 @@ nav.navbar {
 .container {
   padding-top: 70px;
 }
-div .about-page {
+div.about-page {
   background-color: rgba(255, 255, 255, 0.6);
   padding: 20px;
   border-radius: 10px;
+}
+div.home-page {
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+  width: 85%;
+  margin-top: 20px;
 }

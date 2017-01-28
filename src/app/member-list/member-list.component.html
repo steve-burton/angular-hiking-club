@@ -8,7 +8,7 @@
 <div *ngFor="let member of members | async | milesHiked:filterByMiles" class="panel panel-default">
   <div class="panel-body">
     <img src="{{member.image}}" alt="Picture of Portland Hiking Club member">
-    <h3 (click)="goToDetailPage(member)">{{member.name}}</h3>
+    <h3 (click)="goToDetailPage(member)"><span>{{member.name}}</span></h3>
     <p>{{member.about}}</p>
     <div *ngIf="currentRoute === '/admin'" class="admin-panel">
       Address: {{member.address}}<br>
