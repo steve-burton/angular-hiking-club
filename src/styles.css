@@ -16,10 +16,19 @@ body h2 {
 div.miles-filter {
   background-color: rgba(255, 255, 255, 0.5);
   padding: 8px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: gray;
   border-radius: 5px;
+  width: 80%;
 }
-div.member-detail img {
-  width: 400px;
+div.panel.panel-default {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-width: 1px;
+  border-style: solid;
+  border-color: gray;
+  border-radius: 8px;
+  width: 80%;
 }
 div.panel-body img {
   width: 200px;
@@ -27,9 +36,21 @@ div.panel-body img {
   margin-right: 20px;
 }
 div.panel-body span:hover {
-  background-color: rgb(209, 226, 255);
+  background-color: rgb(155, 183, 204);
   padding: 3px 10px 3px 5px;
   cursor: pointer;
+}
+div.member-detail {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  width: 70%;
+  border-radius: 20px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: gray;
+}
+div.member-detail img {
+  width: 400px;
 }
 body {
   background-image: url("./assets/images/mountains.jpg");
